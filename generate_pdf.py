@@ -105,7 +105,7 @@ def build_pdf():
     story.append(Paragraph("<b>Author / Lead Engineering:</b> Nithin Joseph & Engineering Team", body_style))
     story.append(Paragraph("<b>Version:</b> 1.0 (Production-Ready Prototype)", body_style))
     story.append(Paragraph("<b>Target Market:</b> India Tier-1 Cities (Bangalore, Gurgaon, Mumbai, Hyderabad, Pune, NCR)", body_style))
-    story.append(Paragraph("<b>Repository Path:</b> <code>C:\\Nithin-Learning\\Projects\\kookindia</code>", body_style))
+    story.append(Paragraph("<b>GitHub Repository:</b> <code>https://github.com/njoseph11224-tech/kookindia.git</code>", body_style))
     story.append(Spacer(1, 15))
 
     # ================= EXECUTIVE SUMMARY =================
@@ -216,17 +216,18 @@ def build_pdf():
     story.append(Spacer(1, 15))
 
     # ================= DEVELOPER SETUP INSTRUCTIONS =================
-    story.append(Paragraph("6. Developer Setup & Local Execution", heading1_style))
-    story.append(Paragraph("Follow these instructions to run the local prototype repository on your machine:", body_style))
+    story.append(Paragraph("6. Developer Setup & Execution", heading1_style))
+    story.append(Paragraph("Follow these instructions to clone and run the repository on your machine:", body_style))
     
     commands = [
         "1. Open Terminal or PowerShell.",
-        "2. Navigate to project folder:  cd C:\\Nithin-Learning\\Projects\\kookindia",
-        "3. Install dependencies:          npm install",
-        "4. Start Next.js dev server:     npm run dev",
-        "5. Open Browser:                 http://localhost:3000",
-        "6. Admin Portal:                 http://localhost:3000/admin/login (admin@kookindia.com / admin123)",
-        "7. Cook Partner Dashboard:       http://localhost:3000/cook/dashboard"
+        "2. Clone GitHub repository:     git clone https://github.com/njoseph11224-tech/kookindia.git",
+        "3. Navigate to project folder:   cd kookindia",
+        "4. Install dependencies:         npm install",
+        "5. Start Next.js dev server:    npm run dev",
+        "6. Open Marketplace Browser:    http://localhost:3000",
+        "7. Admin Portal:                http://localhost:3000/admin/login (admin@kookindia.com / admin123)",
+        "8. Cook Partner Dashboard:      http://localhost:3000/cook/dashboard"
     ]
 
     for cmd in commands:
